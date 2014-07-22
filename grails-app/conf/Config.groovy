@@ -100,12 +100,12 @@ log4j.main = {
     appenders {
 
         console name:'stdout', layout:pattern(conversionPattern: '%d{dd MMM yyyy HH:mm:ss,SSS} %c{2} %m%n')
-        rollingFile name:'consumerlog', maxFileSize:'200MB', file:'/tmp/logs/billing_bill.log', layout:pattern(conversionPattern: '%d{yyyy/MM/dd HH:mm:ss} %c{2} %m%n')
-        rollingFile name:'stacktrace', maxFileSize:'200MB', file:'/tmp/logs/stacktrace.log', layout:pattern(conversionPattern: '%d{yyyy/MM/dd HH:mm:ss} %c{2} %m%n')
+        rollingFile name:'feedlog', maxFileSize:'200MB', file:'/tmp/logs/feed.log', layout:pattern(conversionPattern: '%d{yyyy/MM/dd HH:mm:ss} %c{2} %m%n')
+        rollingFile name:'stacktrace', maxFileSize:'200MB', file:'/tmp/logs/stacktrace_feed.log', layout:pattern(conversionPattern: '%d{yyyy/MM/dd HH:mm:ss} %c{2} %m%n')
     }
 
     root{
-        info 'consumerlog'
+        info 'feedlog'
         // Descomentar si se quieren ver los test en consola
         info  'stdout'
     }
