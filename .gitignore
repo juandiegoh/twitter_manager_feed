@@ -28,3 +28,11 @@
 
 # "temporary" build files
 /target
+
+# IDEs
+.idea/
+.classpath
+.project
+
+# Twitter4j
+twitter4j.properties
