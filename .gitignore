@@ -33,6 +33,7 @@
 .idea/
 .classpath
 .project
+*.iml
 
 # Twitter4j
 twitter4j.properties
